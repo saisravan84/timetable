@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>magic</title>
+<link href="magic.css" rel="stylesheet">
+</head>
+<body>
+<div class="green">
+<input type="checkbox" checked name="mycheckbox" id="mycheckbox" value="0" onchange="change()"/>
+<p class="text">UnCheck the box to fill details</p>
+<hr>
+</div>
+<div id="mycheckboxdiv" class="boxdiv">
+
+<table>
+<tr>
+<td>
+<p class=text>Organiztion:</p><select id="org">
+<option value="" disabled>select</option>
+<option value="sree vidyanikethan engineering college">SREE VIDYANIKETHAN ENGINEERING COLLEGE</option>
+</select>
+</td>
+<td>
+<p class=text>Department:</p><select id="dept">
+<option value="" disabled>select</option>
+<option value="IT">IT</option>
+<option value="CSE">CSE</option>
+<option value="CSSE">CSSE</option>
+<option value="ECE">ECE</option>
+<option value="EEE">EEE</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<p class=text>Faculty:</p><select id="facu">
+<option value="" disabled>select</option>
+<option value="UMA MAHESH">svec1201 UMA MAHESH</option>
+<option value="BASHEER">svec1202 BASHEER</option>
+<option value="BASHA">svec1203 BASHA</option>
+<option value="TRILOK REDDY">svec1204 TRILOK REDDY</option>
+<option value="CHANAKYA">svec1205 CHANAKYA</option>
+<option value="SRINIVAS ACHARI">svec1206 SRINIVAS ACHARI</option>
+</select>
+</td>
+<td>
+<button onclick=chname() class="button">Show details</button>
+</td>
+</tr>
+</table>
+</div>
+<div class="green">
+<hr>
+<form name="fe1">
+<table>
+<tr><td><p class=text>From Date:</p><input type="date" id="date1" name="dd1"></td><td><p class=text>To Date:</p><input type="date" id="date2" name=dd2></td><td><p style="color:red;"><span id="error" class="text"></span></p></td></tr>
+</table>
+</form>
+<hr>
+</div>
+
+<div class="faculty" id="facultyid">
+<table>
+<tr><td id="faculty_name"><h2 class="text">NAME OF THE LECTURER:</h2></td><td id="short"><span id="name">Sravan</span></td></tr>
+</table>
+<table>
+<tr><th>From date</th><th>To date</th><th>Program</th><th>Year</th><th>Semister</th><th>Course</th><th>section</th><th>Post Attendence</th></tr>
+<tr><td><span id="table_date1">From date</span></td><td><span id="table_date2">From date</span></td><td>B.Tech-<span id="table_program"></span></td><td><span id="table_year"></span> year</td>
+  <td><span id="table_semister">II</span></td><td><span id="table_course">JAVA SCRIPT</span></td><td><span id="table_section">B</span></td><td><a href="post_attendance">Post Attendence</a></td></tr>
+</table>
+</div>
+
+<script type="text/javascript" src="protest.js">
+</script>
+</body>
+</html>
